@@ -1,0 +1,18 @@
+<com.example.dell.v.ArcProgressBar.ColorArcProgressBar
+    android:id="@+id/health_bar"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:layout_centerInParent="true"
+    app:back_color="@android:color/darker_gray"
+    app:back_width="10dp"
+    app:front_color1="#4BD866"
+    app:front_color2="#46D480"
+    app:front_color3="@color/title_green"
+    app:front_width="13dp"
+    app:is_need_content="true"
+    app:is_need_unit="true"
+    app:max_value="100"
+    app:string_unit=""
+    app:is_need_title="true"
+    app:string_title="今日步数"
+    app:total_engle="270" />

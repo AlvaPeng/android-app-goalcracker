@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+
+
+        <ImageButton
+            android:id="@+id/button_diy_goal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:background="#00000000"
+            app:srcCompat="@drawable/diy_a_goal"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/button_add_challenge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:background="#00000000"
+            app:srcCompat="@drawable/add_a_challenge"
+            android:layout_weight="1"
+            />
+
+
+</LinearLayout>

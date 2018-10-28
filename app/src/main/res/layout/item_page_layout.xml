@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    tools:context="com.example.dell.v.ColorArcProgressBar">
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:id="@+id/itemName"/>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="40dp">
+
+    <com.example.dell.v.ColorArcProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        app:back_color="@android:color/darker_gray"
+        app:back_width="10dp"
+        app:front_color1="#2f4b2f"
+        app:front_color2="#2a302a"
+        app:front_color3="#101210"
+        app:front_width="13dp"
+        app:is_need_content="false"
+        app:is_need_unit="true"
+        app:string_unit=""
+        app:is_need_title="true"
+        app:string_title=""
+        app:total_angle="270">
+    </com.example.dell.v.ColorArcProgressBar>
+
+    <com.example.dell.v.ColorArcProgressBar
+        android:id="@+id/progress_inner_bar"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        app:back_color="@android:color/darker_gray"
+        app:back_width="10dp"
+        app:front_color1="#8edc9d"
+        app:front_color2="#46D480"
+        app:front_color3="#56a375"
+        app:front_width="13dp"
+        app:is_need_content="true"
+        app:is_need_unit="true"
+        app:string_unit=""
+        app:is_need_title="true"
+        app:string_title="打卡天数"
+        app:total_angle="270"
+        app:is_need_background="false">
+    </com.example.dell.v.ColorArcProgressBar>
+</RelativeLayout>
+    <com.example.dell.v.MorphingButton.MorphingButton
+        android:id="@+id/button_morph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:fontFamily="casual"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>
