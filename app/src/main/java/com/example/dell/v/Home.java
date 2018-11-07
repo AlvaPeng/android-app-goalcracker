@@ -24,6 +24,7 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.dell.v.User.UserLogin;
 import com.example.dell.v.swipemenu.BaseSwipeListAdapter;
 import com.example.dell.v.swipemenu.SwipeMenu;
 import com.example.dell.v.swipemenu.SwipeMenuCreator;
@@ -38,10 +39,11 @@ public class Home extends AppCompatActivity {
     private List<GoalItem> goalList = new ArrayList<GoalItem>();
     java.util.Calendar cur_c = java.util.Calendar.getInstance();
     private int current_month, current_day;
-    private ImageButton add_ddl;
     private SwipeMenuListView mListView;
     private DDLAdapter mAdapter;
-    private Button test;
+    private ImageButton add_ddl;
+    private ImageButton button_location;
+    private ImageButton button_profile;
     private SqlDao dao;
     public static Resources resourcesInstance;
 
@@ -152,17 +154,29 @@ public class Home extends AppCompatActivity {
         public void onClick(View v) {
             Intent toAdd = new Intent(Home.this,AddGoal.class);
                     startActivity(toAdd);   //跳转
-              }
+            overridePendingTransition(R.anim.slide_bottom_in, R.anim.slide_top_off);
+        }
            });
 
-           test = findViewById(R.id.button_test);
-           test.setOnClickListener(new View.OnClickListener() {
+           button_location = findViewById(R.id.button_location);
+           button_location.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent toAdd = new Intent(Home.this,MapTest.class);
                 startActivity(toAdd);   //跳转
+                overridePendingTransition(R.anim.slide_bottom_in, R.anim.slide_top_off);
             }
         });
+
+           button_profile = findViewById(R.id.button_profile);
+           button_profile.setOnClickListener(new View.OnClickListener() {
+               @Override
+               public void onClick(View v) {
+                   Intent toPro = new Intent(Home.this,UserLogin.class);
+                   startActivity(toPro);
+                   overridePendingTransition(R.anim.slide_bottom_in, R.anim.slide_top_off);
+               }
+           });
 
     }//onCreate
 

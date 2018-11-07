@@ -43,6 +43,8 @@
         <activity android:name=".MapTest"></activity>
         <activity android:name=".SearchPosition"></activity>
         <activity android:name=".ChallengePage"></activity>
+        <activity android:name=".ProfilePage"></activity>
+        <activity android:name=".User.UserLogin"></activity>
 
     </application>
 
